@@ -1,16 +1,17 @@
-from __main__ import name
 def fibonaci(n):
     a = 0
     b = 1
     c = 0
-    for i in n:
+    for i in range(n):
         c = a + b
-        b = a
+        a = b
         b = c
+        
+        
         print 'i-->',i,'c===>',c
         
 
-if name == '__main__()':
+if __name__ == '__main__':
     fibonaci(10)
     
         
